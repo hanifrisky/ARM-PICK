@@ -4,5 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/outsourcing/opening.unity
+    guid: 0842be3cf0eb2f54483b7a58aa60710c
+  - enabled: 1
+    path: Assets/Scenes/outsourcing/easy.unity
+    guid: f8460a5db32a1b945948727247237815
+  - enabled: 1
+    path: Assets/Scenes/outsourcing/hard.unity
+    guid: c0aa30ba4ce34584d915791a1c11b7de
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
