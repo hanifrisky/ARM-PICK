@@ -14,7 +14,9 @@ public class Objectives : MonoBehaviour
     public ObjectivesListItem prefabList;
     public List<ObjectivesListItem> listItem;
     public Transform transformList;
+    public Transform transformList2;
     ObjectivesListItem prevItem;
+    public int limitList = 5;
 
     [Header("Finish Event")]
     public int jumlahFinish;
@@ -39,6 +41,7 @@ public class Objectives : MonoBehaviour
         indexObjectives = 0;
         jumlahFinish = 0;
         elapsedTime = 0;
+        int nomor = 0;
         RoboticGrabObject rAnim;
         foreach (var item in listObjectives)
         {
@@ -58,10 +61,12 @@ public class Objectives : MonoBehaviour
                 }
             }
             jumlahItem = 1;
-            ObjectivesListItem newItem = Instantiate(prefabList, transformList);
-            newItem.name = "List item ke-" + listItem.Count;
+            nomor++;
+            ObjectivesListItem newItem = Instantiate(prefabList, transformParent());
+            newItem.name = "List item ke-" + nomor;
             newItem.listObjectives = new List<ObjectivesItem>();
             prevItem = newItem;
+            newItem.setNomor(nomor);
             newItem.setLabel(item.label);
             newItem.setCount(jumlahItem);
             newItem.robot = item.robot;
@@ -73,6 +78,17 @@ public class Objectives : MonoBehaviour
             }
             newItem.listObjectives.Add(item);
             listItem.Add(newItem);
+        }
+    }
+    public Transform transformParent()
+    {
+        if (transformList.childCount < limitList)
+        {
+            return transformList;
+        }
+        else
+        {
+            return transformList2;
         }
     }
     private void Update()

@@ -10,9 +10,13 @@ public class ObjectivesListItem : MonoBehaviour
     public bool isFinish = false;
     public GameObject centang;
     public TMP_Text textLabel;
+    public TMP_Text nomorLabel;
     public bool robot = false;
     public List<ObjectivesItem> listObjectives;
-
+    public void setNomor(int nomor)
+    {
+        nomorLabel.text = nomor + ". ";
+    }
     public void setLabel(string labelText)
     {
         label = labelText;

@@ -7,8 +7,9 @@ public class RoboticGrabObject : MonoBehaviour
 {
     public Transform follow;
     public bool isFollowing = false;
-
+    public bool faseDua;
     private Rigidbody rb;
+    public bool snap;
 
     [Header("Finger")]
     public List<RoboticAnim> grab;
@@ -16,6 +17,7 @@ public class RoboticGrabObject : MonoBehaviour
 
     [Header("Join")]
     public List<RoboticAnim> ambil;
+    public List<RoboticAnim> ambilFaseDua;
     public List<RoboticAnim> transisi;
     public List<RoboticAnim> taruh;
 
@@ -39,6 +41,10 @@ public class RoboticGrabObject : MonoBehaviour
         if (value)
         {
             transform.parent = follow;
+            if (snap)
+            {
+                transform.localPosition = Vector3.zero;
+            }
         }
         else
         {
@@ -80,6 +86,14 @@ public class RoboticGrabObject : MonoBehaviour
             anim.join.SetRotation(anim.angle);
         }
     }
+    [ContextMenu("Pose Ambil Fase Dua")]
+    public void PoseAmbilFAseDua()
+    {
+        foreach (var anim in ambilFaseDua)
+        {
+            anim.join.SetRotation(anim.angle);
+        }
+    }
     [ContextMenu("Pose Transisi")]
     public void PoseTransisi()
     {
@@ -117,6 +131,14 @@ public class RoboticGrabObject : MonoBehaviour
     public void SetAmbil()
     {
         foreach (var anim in ambil)
+        {
+            anim.angle = anim.join.rotationAngle;
+        }
+    }
+    [ContextMenu("Set Ambil Fase Dua")]
+    public void SetAmbilFaseDua()
+    {
+        foreach (var anim in ambilFaseDua)
         {
             anim.angle = anim.join.rotationAngle;
         }

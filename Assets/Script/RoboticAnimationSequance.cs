@@ -103,11 +103,30 @@ public class RoboticAnimationSequance : MonoBehaviour
         IEnumerator proses()
         {
             SetAnimateJoin(false);
+            int index = 0;
+            bool isFinish = false;
             foreach (var anim in list)
             {
-                anim.join.AnimateTo(anim.angle, waktuAnimasi, (val) => { });
+                if (index == 0)
+                {
+                    anim.join.AnimateTo(anim.angle, waktuAnimasi, (val) => {
+                        Debug.Log("Aanimation join selesai:" + val);
+                        isFinish = val;
+
+                    });
+                }
+                else
+                {
+                    anim.join.AnimateTo(anim.angle, waktuAnimasi, (val) => {});
+                }
+                
+                index++;
             }
-            yield return new WaitForSeconds(waktuAnimasi);
+            while (!isFinish)
+            {
+                yield return null;
+            }
+            //yield return new WaitForSeconds(waktuAnimasi);
             SetAnimateJoin(true);
         }
     }
