@@ -15,7 +15,7 @@ public class LeapLatencyDisplay : MonoBehaviour
     void Start()
     {
         UnityEngine.Application.targetFrameRate = 90;
-
+        isStarted = false;
         // Awal kosong
         latencyText.text = "0.00";
     }
