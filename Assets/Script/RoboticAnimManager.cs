@@ -15,6 +15,7 @@ public class RoboticAnimManager : MonoBehaviour
     private float pauseStartTime = 0f;
     private float totalPauseDuration = 0f;
     private int pauseCount = 0;
+    public Objectives ObjectivesInstance;
 
     private void Awake()
     {
@@ -85,6 +86,9 @@ public class RoboticAnimManager : MonoBehaviour
 
     void UpdateUI()
     {
+        //jika objectives selesai tidak perlu hitung
+        if (ObjectivesInstance.isFinish()) return;
+
         if (durasiTunda != null)
         {
             durasiTunda.text = FormatTime(GetTotalPauseDuration());

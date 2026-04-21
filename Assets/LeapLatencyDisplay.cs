@@ -11,7 +11,7 @@ public class LeapLatencyDisplay : MonoBehaviour
     private float latency = 0f;
 
     private bool isStarted = false;
-
+    public Objectives ObjectivesInstance;
     void Start()
     {
         UnityEngine.Application.targetFrameRate = 90;
@@ -22,6 +22,9 @@ public class LeapLatencyDisplay : MonoBehaviour
 
     void Update()
     {
+        //jika objectives selesai tidak perlu hitung
+        if (ObjectivesInstance.isFinish()) return;
+
         // Belum start → jangan hitung
         if (!isStarted) return;
 
