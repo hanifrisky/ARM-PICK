@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e0feb8b537e054f8ad3596e9d9769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: Ambil Support Boomdan masukkan ke tray
+  label: (Human) Ambil Support Boomdan masukkan ke tray
   robot: 0
   isFinish: 0
   trayTag: Tray
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e0feb8b537e054f8ad3596e9d9769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: Pindahkan cover ke tray
+  label: (Human) Pindahkan cover ke tray
   robot: 0
   isFinish: 0
   trayTag: Tray
@@ -653,6 +653,20 @@ MonoBehaviour:
   onGrabExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &460618106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460618097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  physicalHandsManager: {fileID: 1651223723}
+  useNonKinematicMovementOnly: 1
 --- !u!114 &553721388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,8 +679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e0feb8b537e054f8ad3596e9d9769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: (Robot) Ambil Angle Bracket dan masukkan ke tray
-  robot: 1
+  label: (Human) Ambil Angle Bracket dan masukkan ke tray
+  robot: 0
   isFinish: 0
   trayTag: Tray
 --- !u!114 &553721389
@@ -676,7 +690,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f9f52ed060bb064d826c7082e28c364, type: 3}
   m_Name: 
@@ -1014,6 +1028,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1751616456755033589, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 553721388}
+    - targetCorrespondingSourceObject: {fileID: 1751616456755033589, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 780015759}
+    - targetCorrespondingSourceObject: {fileID: 1751616456755033589, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 780015758}
     - targetCorrespondingSourceObject: {fileID: 2212883227903534812, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 660641840}
@@ -1077,6 +1097,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 661142693092873445, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 460618105}
+    - targetCorrespondingSourceObject: {fileID: 661142693092873445, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 460618106}
     - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1010183438}
@@ -1092,6 +1115,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1010183434}
+    - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1645844461}
     - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 981989723}
@@ -1107,6 +1133,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 981989719}
+    - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1864902596}
     - targetCorrespondingSourceObject: {fileID: 142131296084490911, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1644361680}
@@ -1131,6 +1160,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 142131296084490911, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1644361673}
+    - targetCorrespondingSourceObject: {fileID: 142131296084490911, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1644361682}
+    - targetCorrespondingSourceObject: {fileID: 142131296084490911, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1644361681}
     - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 708368109}
@@ -1146,6 +1181,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 708368105}
+    - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1074806121}
     - targetCorrespondingSourceObject: {fileID: 4111826981985020368, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 99522934}
@@ -1577,8 +1615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e0feb8b537e054f8ad3596e9d9769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: Ambil PCB dan masukkan ke tray
-  robot: 0
+  label: (Robot) Ambil PCB dan masukkan ke tray
+  robot: 1
   isFinish: 0
   trayTag: Tray
 --- !u!114 &708368106
@@ -1588,7 +1626,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361667}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
   m_Name: 
@@ -1650,7 +1688,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361667}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
   m_Name: 
@@ -1907,6 +1945,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+--- !u!114 &780015758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644361672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  physicalHandsManager: {fileID: 1651223723}
+  useNonKinematicMovementOnly: 1
+--- !u!114 &780015759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644361672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editTimePose: 1
+  _inputProvider: {fileID: 409930525}
+  _contactMode: 0
+  _hoverDistance: 0.04
+  _contactDistance: 0.002
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &864314748
 GameObject:
   m_ObjectHideFlags: 0
@@ -6431,8 +6518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e0feb8b537e054f8ad3596e9d9769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: Ambil Driven Element dan masukkan ke tray
-  robot: 0
+  label: (Robot) Ambil Driven Element dan masukkan ke tray
+  robot: 1
   isFinish: 0
   trayTag: Tray
 --- !u!114 &981989720
@@ -6442,7 +6529,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
   m_Name: 
@@ -6504,7 +6591,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
   m_Name: 
@@ -6544,8 +6631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e0feb8b537e054f8ad3596e9d9769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: Ambil Driven Element dan masukkan ke tray
-  robot: 0
+  label: (Robot) Ambil Driven Element dan masukkan ke tray
+  robot: 1
   isFinish: 0
   trayTag: Tray
 --- !u!114 &1010183435
@@ -6555,7 +6642,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
   m_Name: 
@@ -6617,7 +6704,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
   m_Name: 
@@ -6645,6 +6732,84 @@ MonoBehaviour:
   onGrabExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1074806121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644361667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f52ed060bb064d826c7082e28c364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  follow: {fileID: 1319353704}
+  isFollowing: 0
+  faseDua: 1
+  snap: 1
+  grab:
+  - join: {fileID: 1319353712}
+    angle: 46.3
+  - join: {fileID: 1319353711}
+    angle: 46.3
+  lepas:
+  - join: {fileID: 1319353712}
+    angle: 50
+  - join: {fileID: 1319353711}
+    angle: 50
+  ambil:
+  - join: {fileID: 1319353710}
+    angle: 21.6
+  - join: {fileID: 1319353709}
+    angle: 7.01
+  - join: {fileID: 1319353708}
+    angle: 51.8
+  - join: {fileID: 1319353707}
+    angle: 66.5
+  - join: {fileID: 1319353706}
+    angle: 54.4
+  - join: {fileID: 1319353705}
+    angle: 115
+  ambilFaseDua:
+  - join: {fileID: 1319353710}
+    angle: 21.6
+  - join: {fileID: 1319353709}
+    angle: -0.2
+  - join: {fileID: 1319353708}
+    angle: 55.2
+  - join: {fileID: 1319353707}
+    angle: 54.5
+  - join: {fileID: 1319353706}
+    angle: 68.6
+  - join: {fileID: 1319353705}
+    angle: 115
+  transisi:
+  - join: {fileID: 1319353710}
+    angle: -17.9
+  - join: {fileID: 1319353709}
+    angle: -27.61
+  - join: {fileID: 1319353708}
+    angle: 45.5
+  - join: {fileID: 1319353707}
+    angle: 79.3
+  - join: {fileID: 1319353706}
+    angle: 90
+  - join: {fileID: 1319353705}
+    angle: 60.2
+  taruh:
+  - join: {fileID: 1319353710}
+    angle: -60.8
+  - join: {fileID: 1319353709}
+    angle: 39.1
+  - join: {fileID: 1319353708}
+    angle: 36.4
+  - join: {fileID: 1319353707}
+    angle: 18.8
+  - join: {fileID: 1319353706}
+    angle: 77.4
+  - join: {fileID: 1319353705}
+    angle: 90
 --- !u!1 &1077735347
 GameObject:
   m_ObjectHideFlags: 0
@@ -7229,15 +7394,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 968317126230661015, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: 31.31
+      value: 68.6
       objectReference: {fileID: 0}
     - target: {fileID: 1047021227508282517, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8616291
+      value: 0.9063078
       objectReference: {fileID: 0}
     - target: {fileID: 1047021227508282517, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5075384
+      value: -0.4226183
       objectReference: {fileID: 0}
     - target: {fileID: 1274474461565109458, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: durasiTunda
@@ -7253,7 +7418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1369473604115053647, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: 61
+      value: 60.1
       objectReference: {fileID: 0}
     - target: {fileID: 2244305337949554272, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: maxAngle
@@ -7269,7 +7434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2244305337949554272, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: 51.4
+      value: 55.2
       objectReference: {fileID: 0}
     - target: {fileID: 2663752184248699485, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: maxAngle
@@ -7285,7 +7450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2663752184248699485, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: -21.91
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2834860946145795584, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7301,11 +7466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2964559657277158797, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9817767
+      value: 0.9999985
       objectReference: {fileID: 0}
     - target: {fileID: 2964559657277158797, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.19003797
+      value: -0.0017453284
       objectReference: {fileID: 0}
     - target: {fileID: 3450960721841677103, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_Name
@@ -7321,15 +7486,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3566999630162464223, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: 61
+      value: 60.1
       objectReference: {fileID: 0}
     - target: {fileID: 3728373908872568840, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8616291
+      value: 0.9063078
       objectReference: {fileID: 0}
     - target: {fileID: 3728373908872568840, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5075384
+      value: 0.4226183
       objectReference: {fileID: 0}
     - target: {fileID: 3945666158200123922, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7373,11 +7538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4296531517622137304, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6149736
+      value: 0.88901716
       objectReference: {fileID: 0}
     - target: {fileID: 4296531517622137304, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7885477
+      value: 0.4578739
       objectReference: {fileID: 0}
     - target: {fileID: 4708860638229706631, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: maxAngle
@@ -7393,7 +7558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4708860638229706631, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: 104.1
+      value: 54.5
       objectReference: {fileID: 0}
     - target: {fileID: 5375494392743456338, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: maxAngle
@@ -7405,7 +7570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5375494392743456338, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: 0
+      value: 106.6
       objectReference: {fileID: 0}
     - target: {fileID: 5918699036650190533, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: maxAngle
@@ -7417,39 +7582,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5918699036650190533, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: rotationAngle
-      value: 0
+      value: 12.19
       objectReference: {fileID: 0}
     - target: {fileID: 6115235523694335836, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.962904
+      value: 0.8260983
       objectReference: {fileID: 0}
     - target: {fileID: 6115235523694335836, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.26984426
+      value: 0.56352603
       objectReference: {fileID: 0}
     - target: {fileID: 6599628680078118378, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5372996
       objectReference: {fileID: 0}
     - target: {fileID: 6599628680078118378, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.8433915
       objectReference: {fileID: 0}
     - target: {fileID: 8285448812539922058, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.90107703
+      value: 0.8862036
       objectReference: {fileID: 0}
     - target: {fileID: 8285448812539922058, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.4336591
+      value: 0.46329606
       objectReference: {fileID: 0}
     - target: {fileID: 8372069188217457009, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9822872
       objectReference: {fileID: 0}
     - target: {fileID: 8372069188217457009, guid: 51d6ace6b499de841a1a046fb4e1fded, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.18738131
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7668,7 +7833,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644361669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f9f52ed060bb064d826c7082e28c364, type: 3}
   m_Name: 
@@ -7766,8 +7931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e0feb8b537e054f8ad3596e9d9769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: (Robot) Ambil Hoursing dan masukkan ke tray
-  robot: 1
+  label: (Human) Ambil Hoursing dan masukkan ke tray
+  robot: 0
   isFinish: 0
   trayTag: Tray
 --- !u!65 &1644361676
@@ -7875,6 +8040,133 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8000001, y: 0.032419138, z: 0.14999995}
   m_Center: {x: 0.0000020268965, y: -0.2837908, z: 0.08500097}
+--- !u!114 &1644361681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644361669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  physicalHandsManager: {fileID: 1651223723}
+  useNonKinematicMovementOnly: 1
+--- !u!114 &1644361682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644361669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editTimePose: 1
+  _inputProvider: {fileID: 409930525}
+  _contactMode: 0
+  _hoverDistance: 0.04
+  _contactDistance: 0.002
+  onHover:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onContact:
+    m_PersistentCalls:
+      m_Calls: []
+  onContactExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrabExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1645844461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644361671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f52ed060bb064d826c7082e28c364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  follow: {fileID: 1319353704}
+  isFollowing: 0
+  faseDua: 1
+  snap: 0
+  grab:
+  - join: {fileID: 1319353712}
+    angle: 46.3
+  - join: {fileID: 1319353711}
+    angle: 46.3
+  lepas:
+  - join: {fileID: 1319353712}
+    angle: 50
+  - join: {fileID: 1319353711}
+    angle: 50
+  ambil:
+  - join: {fileID: 1319353710}
+    angle: 14.7
+  - join: {fileID: 1319353709}
+    angle: 4.13
+  - join: {fileID: 1319353708}
+    angle: 71.1
+  - join: {fileID: 1319353707}
+    angle: 33
+  - join: {fileID: 1319353706}
+    angle: 65.7
+  - join: {fileID: 1319353705}
+    angle: 115
+  ambilFaseDua:
+  - join: {fileID: 1319353710}
+    angle: 12.19
+  - join: {fileID: 1319353709}
+    angle: 30.5
+  - join: {fileID: 1319353708}
+    angle: 45.8
+  - join: {fileID: 1319353707}
+    angle: 25.3
+  - join: {fileID: 1319353706}
+    angle: 79.5
+  - join: {fileID: 1319353705}
+    angle: 106.6
+  transisi:
+  - join: {fileID: 1319353710}
+    angle: -17.9
+  - join: {fileID: 1319353709}
+    angle: -27.61
+  - join: {fileID: 1319353708}
+    angle: 45.5
+  - join: {fileID: 1319353707}
+    angle: 79.3
+  - join: {fileID: 1319353706}
+    angle: 90
+  - join: {fileID: 1319353705}
+    angle: 60.2
+  taruh:
+  - join: {fileID: 1319353710}
+    angle: -60.8
+  - join: {fileID: 1319353709}
+    angle: 39.1
+  - join: {fileID: 1319353708}
+    angle: 36.4
+  - join: {fileID: 1319353707}
+    angle: 18.8
+  - join: {fileID: 1319353706}
+    angle: 77.4
+  - join: {fileID: 1319353705}
+    angle: 90
 --- !u!1 &1651223721
 GameObject:
   m_ObjectHideFlags: 0
@@ -8302,6 +8594,84 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1864902596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644361670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9f52ed060bb064d826c7082e28c364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  follow: {fileID: 1319353704}
+  isFollowing: 0
+  faseDua: 1
+  snap: 0
+  grab:
+  - join: {fileID: 1319353712}
+    angle: 46.3
+  - join: {fileID: 1319353711}
+    angle: 46.3
+  lepas:
+  - join: {fileID: 1319353712}
+    angle: 50
+  - join: {fileID: 1319353711}
+    angle: 50
+  ambil:
+  - join: {fileID: 1319353710}
+    angle: 27.6
+  - join: {fileID: 1319353709}
+    angle: -24.85
+  - join: {fileID: 1319353708}
+    angle: 83.5
+  - join: {fileID: 1319353707}
+    angle: 64.9
+  - join: {fileID: 1319353706}
+    angle: 54.5
+  - join: {fileID: 1319353705}
+    angle: 115
+  ambilFaseDua:
+  - join: {fileID: 1319353710}
+    angle: 40.4
+  - join: {fileID: 1319353709}
+    angle: -42.8
+  - join: {fileID: 1319353708}
+    angle: 93.6
+  - join: {fileID: 1319353707}
+    angle: 74.3
+  - join: {fileID: 1319353706}
+    angle: 54.5
+  - join: {fileID: 1319353705}
+    angle: 115
+  transisi:
+  - join: {fileID: 1319353710}
+    angle: -17.9
+  - join: {fileID: 1319353709}
+    angle: -27.61
+  - join: {fileID: 1319353708}
+    angle: 45.5
+  - join: {fileID: 1319353707}
+    angle: 79.3
+  - join: {fileID: 1319353706}
+    angle: 90
+  - join: {fileID: 1319353705}
+    angle: 60.2
+  taruh:
+  - join: {fileID: 1319353710}
+    angle: -60.8
+  - join: {fileID: 1319353709}
+    angle: 39.1
+  - join: {fileID: 1319353708}
+    angle: 36.4
+  - join: {fileID: 1319353707}
+    angle: 18.8
+  - join: {fileID: 1319353706}
+    angle: 77.4
+  - join: {fileID: 1319353705}
+    angle: 90
 --- !u!1001 &1885131397
 PrefabInstance:
   m_ObjectHideFlags: 0

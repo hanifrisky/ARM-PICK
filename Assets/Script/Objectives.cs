@@ -146,6 +146,14 @@ public class Objectives : MonoBehaviour
         }
         CheckAnimRobot(indexObjectives);
     }
+    public bool isFinish()
+    {
+        return !timerStart;
+    }
+    public void FinishSimulasi()
+    {
+        timerStart = false;
+    }
     public void CheckAnimRobot(int index)
     {
         Debug.Log("check index-" + index);
