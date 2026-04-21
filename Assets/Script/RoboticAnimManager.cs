@@ -15,17 +15,13 @@ public class RoboticAnimManager : MonoBehaviour
     private float pauseStartTime = 0f;
     private float totalPauseDuration = 0f;
     private int pauseCount = 0;
-    Objectives ObjectivesInstance;
+    public Objectives ObjectivesInstance;
 
     private void Awake()
     {
         Instance = this;
         pauseAnim = false;
         ResetPauseTracking();
-    }
-    private void Start()
-    {
-        ObjectivesInstance = Objectives.instance;
     }
 
     private void Update()
