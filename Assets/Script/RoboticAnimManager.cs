@@ -23,6 +23,10 @@ public class RoboticAnimManager : MonoBehaviour
         pauseAnim = false;
         ResetPauseTracking();
     }
+    private void Start()
+    {
+        ObjectivesInstance = Objectives.instance;
+    }
 
     private void Update()
     {
