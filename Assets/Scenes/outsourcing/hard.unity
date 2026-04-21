@@ -514,72 +514,6 @@ MonoBehaviour:
   robot: 0
   isFinish: 0
   trayTag: Tray
---- !u!114 &460618099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460618097}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9f52ed060bb064d826c7082e28c364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  follow: {fileID: 1319353704}
-  isFollowing: 0
-  faseDua: 0
-  snap: 0
-  grab:
-  - join: {fileID: 1319353712}
-    angle: 45.5
-  - join: {fileID: 1319353711}
-    angle: 45.5
-  lepas:
-  - join: {fileID: 1319353712}
-    angle: 50
-  - join: {fileID: 1319353711}
-    angle: 50
-  ambil:
-  - join: {fileID: 1319353710}
-    angle: 21.8
-  - join: {fileID: 1319353709}
-    angle: 7.01
-  - join: {fileID: 1319353708}
-    angle: 45.5
-  - join: {fileID: 1319353707}
-    angle: 79.3
-  - join: {fileID: 1319353706}
-    angle: 42.8
-  - join: {fileID: 1319353705}
-    angle: 115
-  ambilFaseDua: []
-  transisi:
-  - join: {fileID: 1319353710}
-    angle: -17.9
-  - join: {fileID: 1319353709}
-    angle: -27.61
-  - join: {fileID: 1319353708}
-    angle: 45.5
-  - join: {fileID: 1319353707}
-    angle: 79.3
-  - join: {fileID: 1319353706}
-    angle: 90
-  - join: {fileID: 1319353705}
-    angle: 60.2
-  taruh:
-  - join: {fileID: 1319353710}
-    angle: -68.8
-  - join: {fileID: 1319353709}
-    angle: 9.9
-  - join: {fileID: 1319353708}
-    angle: 63.5
-  - join: {fileID: 1319353707}
-    angle: 39.7
-  - join: {fileID: 1319353706}
-    angle: 61.3
-  - join: {fileID: 1319353705}
-    angle: 90
 --- !u!65 &460618100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -599,8 +533,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.80000013, y: 0.59999996, z: 0.07999998}
-  m_Center: {x: 0.0000019073486, y: 3.552832e-17, z: 0.001667596}
+  m_Size: {x: 0.8000001, y: 0.59999996, z: 0.13005257}
+  m_Center: {x: 0.0000019035725, y: 0.0000000043714414, z: 0.073340245}
 --- !u!54 &460618101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -915,6 +849,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 661142693092873445, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1079724520230181186, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -990,6 +928,10 @@ PrefabInstance:
     - target: {fileID: 6038646188303744791, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365563050962238516, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 114.5
       objectReference: {fileID: 0}
     - target: {fileID: 6441040763090301498, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       propertyPath: m_IsActive
@@ -1100,9 +1042,6 @@ PrefabInstance:
       addedObject: {fileID: 460618100}
     - targetCorrespondingSourceObject: {fileID: 661142693092873445, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 460618099}
-    - targetCorrespondingSourceObject: {fileID: 661142693092873445, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 460618098}
     - targetCorrespondingSourceObject: {fileID: 661142693092873445, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
@@ -1112,16 +1051,10 @@ PrefabInstance:
       addedObject: {fileID: 460618106}
     - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1010183438}
-    - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1010183437}
     - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1010183436}
-    - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1010183435}
     - targetCorrespondingSourceObject: {fileID: 1913341524309304091, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1010183434}
@@ -1130,16 +1063,10 @@ PrefabInstance:
       addedObject: {fileID: 1645844461}
     - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 981989723}
-    - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 981989722}
     - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 981989721}
-    - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 981989720}
     - targetCorrespondingSourceObject: {fileID: 1875656251823669747, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 981989719}
@@ -1178,16 +1105,10 @@ PrefabInstance:
       addedObject: {fileID: 1644361681}
     - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 708368109}
-    - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 708368108}
     - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 708368107}
-    - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 708368106}
     - targetCorrespondingSourceObject: {fileID: 207018392142336961, guid: a053eee34873b064c9ab67d3fd22b484, type: 3}
       insertIndex: -1
       addedObject: {fileID: 708368105}
@@ -1653,20 +1574,6 @@ MonoBehaviour:
   robot: 1
   isFinish: 0
   trayTag: Tray
---- !u!114 &708368106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644361667}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicalHandsManager: {fileID: 708368109}
-  useNonKinematicMovementOnly: 1
 --- !u!54 &708368107
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1715,41 +1622,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7200002, y: 0.52, z: 0.019999996}
   m_Center: {x: 0.0000019520521, y: -0.00000011920929, z: 0.0000014305115}
---- !u!114 &708368109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644361667}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  editTimePose: 1
-  _inputProvider: {fileID: 409930525}
-  _contactMode: 0
-  _hoverDistance: 0.04
-  _contactDistance: 0.002
-  onHover:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onContact:
-    m_PersistentCalls:
-      m_Calls: []
-  onContactExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onGrab:
-    m_PersistentCalls:
-      m_Calls: []
-  onGrabExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &776949740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1761,6 +1633,10 @@ PrefabInstance:
     - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: limitList
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: jumlahFinish
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: listObjectives.Array.size
@@ -2220,20 +2096,6 @@ MonoBehaviour:
   robot: 1
   isFinish: 0
   trayTag: Tray
---- !u!114 &981989720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644361670}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicalHandsManager: {fileID: 981989723}
-  useNonKinematicMovementOnly: 1
 --- !u!54 &981989721
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2282,41 +2144,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0350003, y: 0.4697799, z: 0.069999985}
   m_Center: {x: -0.2459406, y: -0.00010988116, z: 0.00000032410028}
---- !u!114 &981989723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644361670}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  editTimePose: 1
-  _inputProvider: {fileID: 409930525}
-  _contactMode: 0
-  _hoverDistance: 0.04
-  _contactDistance: 0.002
-  onHover:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onContact:
-    m_PersistentCalls:
-      m_Calls: []
-  onContactExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onGrab:
-    m_PersistentCalls:
-      m_Calls: []
-  onGrabExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1010183434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2333,20 +2160,6 @@ MonoBehaviour:
   robot: 1
   isFinish: 0
   trayTag: Tray
---- !u!114 &1010183435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644361671}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bd79d111731a5841886cf2a4736ff1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicalHandsManager: {fileID: 1010183438}
-  useNonKinematicMovementOnly: 1
 --- !u!54 &1010183436
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2395,41 +2208,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0350002, y: 0.4697799, z: 0.069999985}
   m_Center: {x: 0.24594001, y: 0.00010997057, z: 0.0000009536743}
---- !u!114 &1010183438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644361671}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69077fd953cb86488e8a7b2090e7754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  editTimePose: 1
-  _inputProvider: {fileID: 409930525}
-  _contactMode: 0
-  _hoverDistance: 0.04
-  _contactDistance: 0.002
-  onHover:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onContact:
-    m_PersistentCalls:
-      m_Calls: []
-  onContactExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onGrab:
-    m_PersistentCalls:
-      m_Calls: []
-  onGrabExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1074806121
 MonoBehaviour:
   m_ObjectHideFlags: 0
