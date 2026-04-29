@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 3946853215726179790}
   - component: {fileID: 5884441032402882014}
   - component: {fileID: 1732586997147618715}
-  - component: {fileID: 2854049851252560807}
+  - component: {fileID: 4649301086952597002}
   m_Layer: 5
   m_Name: Canvas Jumlah Tunda
   m_TagString: Untagged
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &2854049851252560807
+--- !u!114 &4649301086952597002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -518,14 +518,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3782827889115908491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &5323339669792887251
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +849,7 @@ GameObject:
   - component: {fileID: 5544974556735776380}
   - component: {fileID: 8269836735153323516}
   - component: {fileID: 2652369228664912481}
-  - component: {fileID: 7443986137578679611}
+  - component: {fileID: 6736987488588252911}
   m_Layer: 5
   m_Name: Canvas Durasi Tunda
   m_TagString: Untagged
@@ -923,7 +925,7 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &7443986137578679611
+--- !u!114 &6736987488588252911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -932,14 +934,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7165491027124350691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &5689755253645522391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1044,10 +1048,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Timer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2104768324134684678, guid: dbc0b0474c3cfdc4db94d333c093a77b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2914864941040469515, guid: dbc0b0474c3cfdc4db94d333c093a77b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3271193945177266639}
   m_SourcePrefab: {fileID: 100100000, guid: dbc0b0474c3cfdc4db94d333c093a77b, type: 3}
 --- !u!114 &1295288631609312375 stripped
 MonoBehaviour:
@@ -1065,6 +1073,30 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1702625302080910810, guid: dbc0b0474c3cfdc4db94d333c093a77b, type: 3}
   m_PrefabInstance: {fileID: 5689755253645522391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7387517994106172380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2914864941040469515, guid: dbc0b0474c3cfdc4db94d333c093a77b, type: 3}
+  m_PrefabInstance: {fileID: 5689755253645522391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3271193945177266639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7387517994106172380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &6325078711348263985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1541,22 +1573,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas Objectives
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8014898459164693391, guid: 4586193a0ac4bac4ab626e0097cf231e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7314725753487538828, guid: 4586193a0ac4bac4ab626e0097cf231e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 271186667212864665}
   m_SourcePrefab: {fileID: 100100000, guid: 4586193a0ac4bac4ab626e0097cf231e, type: 3}
 --- !u!114 &784950383257598044 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6979118480415713194, guid: 4586193a0ac4bac4ab626e0097cf231e, type: 3}
   m_PrefabInstance: {fileID: 7655692142222434294}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1134162875253548410}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68adb2bc0dbd5794b9610fb7176cd4bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1134162875253548410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7314725753487538828, guid: 4586193a0ac4bac4ab626e0097cf231e, type: 3}
+  m_PrefabInstance: {fileID: 7655692142222434294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &271186667212864665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134162875253548410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!224 &5544371936643862270 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2796712930558054664, guid: 4586193a0ac4bac4ab626e0097cf231e, type: 3}
@@ -1662,11 +1722,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeapLatency
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7890765253981799437, guid: 03ad9d8de9de453408c4855eb944116f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9015095261635784295, guid: 03ad9d8de9de453408c4855eb944116f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3801467088767583460}
   m_SourcePrefab: {fileID: 100100000, guid: 03ad9d8de9de453408c4855eb944116f, type: 3}
+--- !u!1 &726638671597830351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015095261635784295, guid: 03ad9d8de9de453408c4855eb944116f, type: 3}
+  m_PrefabInstance: {fileID: 8577535836432445096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3801467088767583460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726638671597830351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!224 &6977539704644898884 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1719447075465608940, guid: 03ad9d8de9de453408c4855eb944116f, type: 3}

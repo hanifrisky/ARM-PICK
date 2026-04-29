@@ -738,7 +738,7 @@ GameObject:
   - component: {fileID: 131594788472507126}
   - component: {fileID: 2907026427132104194}
   m_Layer: 0
-  m_Name: Left Poke Interactor
+  m_Name: Right Poke Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
