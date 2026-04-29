@@ -14,5 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/outsourcing/hard.unity
     guid: c0aa30ba4ce34584d915791a1c11b7de
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a3be607411768ea4f8626bb7cf4c2b74, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5caa509e7df7483418aa756f23587bcc, type: 2}
   m_UseUCBPForAssetBundles: 0
