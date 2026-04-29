@@ -2968,35 +2968,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.484
+      value: 0.678
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.182
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.842
+      value: 3.402
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9659258
+      value: 0.9990483
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2588191
+      value: 0.043619405
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1525506782930094554, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3009,6 +3009,14 @@ PrefabInstance:
     - target: {fileID: 4641515301746454854, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_Name
       value: VR Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100383964571167191, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100383964571167191, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.246
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
