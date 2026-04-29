@@ -223,7 +223,6 @@ GameObject:
   - component: {fileID: 5934703517262920157}
   - component: {fileID: 2538169089726544003}
   - component: {fileID: 7890765253981799437}
-  - component: {fileID: 7592915839040834546}
   m_Layer: 5
   m_Name: LeapLatency
   m_TagString: Untagged
@@ -316,20 +315,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7592915839040834546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015095261635784295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e1610766f02a7648b51366ec6bfefff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  latencyText: {fileID: 3543429522499867584}
-  leapProvider: {fileID: 0}
 --- !u!1 &9068354945730555164
 GameObject:
   m_ObjectHideFlags: 0
