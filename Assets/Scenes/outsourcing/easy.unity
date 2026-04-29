@@ -540,6 +540,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3287631011226493148, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
+      propertyPath: radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077283994367007169, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
+      propertyPath: radius
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4641515301746454854, guid: 3559fd52ddc1b3949b80fbe95e178e71, type: 3}
       propertyPath: m_Name
       value: VR Player
