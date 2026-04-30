@@ -3269,6 +3269,38 @@ PrefabInstance:
       propertyPath: 'listObjectives.Array.data[9]'
       value: 
       objectReference: {fileID: 1585473863}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5063521474180024286}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StopLatency
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: OpenXRLatency, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 957843471406946228, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -3624,7 +3656,7 @@ PrefabInstance:
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 5063521474180024285}
+      objectReference: {fileID: 5063521474180024286}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -3655,7 +3687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: 
+      value: StartLatency
       objectReference: {fileID: 0}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -3671,7 +3703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: LeapLatencyDisplay, Assembly-CSharp
+      value: OpenXRLatency, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
@@ -3859,6 +3891,7 @@ MonoBehaviour:
   leftHand: {fileID: 787924923}
   rightHand: {fileID: 787924922}
   text: {fileID: 5063521474180024284}
+  mulai: 0
 --- !u!1001 &6996369920050713697
 PrefabInstance:
   m_ObjectHideFlags: 0

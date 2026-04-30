@@ -12,15 +12,28 @@ public class OpenXRLatency : MonoBehaviour
 
     private Vector3 lastLeftPos;
     private Vector3 lastRightPos;
+    public bool mulai = false;
 
+    public void StartLatency()
+    {
+        mulai = true;
+    }
+    public void StopLatency()
+    {
+        mulai = false;
+    }
     void Start()
     {
+        mulai = false;
         if (leftHand != null) lastLeftPos = leftHand.position;
         if (rightHand != null) lastRightPos = rightHand.position;
     }
 
     void Update()
     {
+        //hitung jika sudah mulai, jika belum maka tidak dihitung
+        if (!mulai) return;
+
         float latency = Time.deltaTime * 1000f;
         float fps = 1.0f / Time.deltaTime;
 

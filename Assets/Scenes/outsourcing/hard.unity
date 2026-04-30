@@ -1807,6 +1807,38 @@ PrefabInstance:
       propertyPath: 'listObjectives.Array.data[10]'
       value: 
       objectReference: {fileID: 99522930}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 776949746}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StopLatency
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: OpenXRLatency, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784950383257598044, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
+      propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 957843471406946228, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -2096,7 +2128,7 @@ PrefabInstance:
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 776949746}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -2143,7 +2175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: LeapLatencyDisplay, Assembly-CSharp
+      value: OpenXRLatency, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6817223684587839520, guid: fcc0768182ff2ba4ea9e1458bb97ae01, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
@@ -2315,6 +2347,7 @@ MonoBehaviour:
   leftHand: {fileID: 5502483623635241131}
   rightHand: {fileID: 5502483623635241130}
   text: {fileID: 776949741}
+  mulai: 0
 --- !u!1 &864314748
 GameObject:
   m_ObjectHideFlags: 0
