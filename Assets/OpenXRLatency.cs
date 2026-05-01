@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class OpenXRLatency : MonoBehaviour
@@ -12,33 +12,49 @@ public class OpenXRLatency : MonoBehaviour
 
     private Vector3 lastLeftPos;
     private Vector3 lastRightPos;
+
     public bool mulai = false;
+
+    // SIMPAN NILAI TERAKHIR
+    private float lastLatency = 0f;
+    private float lastFPS = 0f;
 
     public void StartLatency()
     {
         mulai = true;
     }
+
     public void StopLatency()
     {
         mulai = false;
     }
+
     void Start()
     {
         mulai = false;
+
         if (leftHand != null) lastLeftPos = leftHand.position;
         if (rightHand != null) lastRightPos = rightHand.position;
     }
 
     void Update()
     {
-        //hitung jika sudah mulai, jika belum maka tidak dihitung
-        if (!mulai) return;
+        // kalau belum mulai → tetap tampilkan nilai terakhir
+        if (!mulai)
+        {
+            text.text =
+                lastLatency.ToString("F2") + " ms\n" +
+                lastFPS.ToString("F1") + " FPS";
+            return;
+        }
 
         float latency = Time.deltaTime * 1000f;
         float fps = 1.0f / Time.deltaTime;
 
         float totalLatency = 0f;
         int activeHands = 0;
+
+        bool isMoving = false;
 
         // LEFT HAND
         if (leftHand != null)
@@ -49,6 +65,7 @@ public class OpenXRLatency : MonoBehaviour
             {
                 totalLatency += latency;
                 activeHands++;
+                isMoving = true;
             }
 
             lastLeftPos = leftHand.position;
@@ -63,16 +80,22 @@ public class OpenXRLatency : MonoBehaviour
             {
                 totalLatency += latency;
                 activeHands++;
+                isMoving = true;
             }
 
             lastRightPos = rightHand.position;
         }
 
-        // HITUNG RATA-RATA
-        float avgLatency = (activeHands > 0) ? totalLatency / activeHands : 0f;
+        // HITUNG LATENCY BARU HANYA JIKA ADA GERAKAN
+        if (activeHands > 0)
+        {
+            lastLatency = totalLatency / activeHands;
+            lastFPS = fps;
+        }
 
+        // TAMPILKAN SELALU NILAI TERAKHIR
         text.text =
-             avgLatency.ToString("F2") + " ms\n" +
-             fps.ToString("F1") + "FPS";
+            lastLatency.ToString("F2") + " ms\n" +
+            lastFPS.ToString("F1") + " FPS";
     }
 }
